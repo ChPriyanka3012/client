@@ -1,0 +1,128 @@
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.container1 {
+    display: flex;
+}
+
+.menu-container {
+    height: 540px;
+    width: 60px;
+    border: 2px solid black;
+    box-shadow: 5px 5px 7px lightblue;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: width 0.3s;
+    position: relative;
+}
+
+.menu-container.open {
+    width: 200px;
+}
+
+.menu-toggle {
+    background: none;
+    border: none;
+    position: absolute;
+    top: 3px;
+    right: -8px;
+    font-size: 18px;
+    cursor: pointer;
+    background: linear-gradient(135deg, #6b73ff 0%, #3e7ca3 50%, #4402c7 100%);
+    border-radius:30px;
+}
+.menu-toggle:hover{
+    font-size:30px;
+    
+}
+.main-container {
+    border: 2px solid cornsilk;
+    height: 540px;
+    width: calc(100% - 60px);
+    border-radius: 5px;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    transition: width 0.3s;
+}
+
+.menu-container.open + .main-container {
+    width: calc(100% - 200px);
+}
+
+.menu-item {
+    color: whitesmoke;
+    font-size: 20px;
+    margin-top: 25px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.menu-item:hover {
+    background: linear-gradient(135deg, #6b73ff 0%, #3e7ca3 50%, #4402c7 100%);
+    color: white;
+}
+
+.menu-item span {
+    display: none;
+}
+
+.menu-container.open .menu-item span {
+    display: inline;
+}
+
+
+/* .menu-dashboard{
+    color:whitesmoke;
+    font-size:20px;
+    margin-top:60px;
+    margin-left:20px;
+}
+.menu-dashboard:hover{
+    background:linear-gradient(to right,blue,black,light blue)
+}
+.menu-attendance{
+    color:whitesmoke;
+    font-size:20px;
+    margin-top:20px;
+    margin-left:20px;
+}
+.menu-chat{
+    color:whitesmoke;
+    font-size:20px;
+    margin-top:20px;
+    margin-left:20px;
+}
+.menu-meetings{
+    color:whitesmoke;
+    font-size:20px;
+    margin-top:20px;
+    margin-left:20px;
+}
+.menu-about{
+    color:whitesmoke;
+    font-size:20px;
+    margin-top:20px;
+    margin-left:20px;
+}
+.menu-contact{
+    color:whitesmoke;
+    font-size:20px;
+    margin-top:20px;
+    margin-left:20px;
+}
+.menu-rat{
+    color:whitesmoke;
+    font-size:20px;
+    margin-top:20px;
+    margin-left:20px;
+} */

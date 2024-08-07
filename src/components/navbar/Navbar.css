@@ -1,0 +1,91 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: whitesmoke;
+    color: black; 
+}
+
+.logo img {
+    height: 40px;
+}
+
+.profile1 {
+    display: flex;
+    align-items: center;
+    color: black; 
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.profile img {
+    border-radius: 50%; 
+    margin-right: 10px; 
+    height: 30px;
+    margin-left: 27px;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: absolute;
+    top: 120%;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    z-index: 1000;
+    width: 200px; /* Adjust as needed */
+}
+
+.dropdown-content {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+.dropdown-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.dropdown-name {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.dropdown-email {
+    color: #888;
+    margin-bottom: 10px;
+}
+
+a {
+    display: block;
+    margin-bottom: 10px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.sign-out-button {
+    background-color: rgb(6, 96, 156);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.sign-out-button:hover {
+    background-color: lightblue;
+}

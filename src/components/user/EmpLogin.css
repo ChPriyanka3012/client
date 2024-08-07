@@ -1,0 +1,73 @@
+.main-cont {
+    position: absolute;
+    padding: 50px;
+    top: 90px;
+    /* right: -550px; */
+    margin-left:30%;
+    margin-top:1%;
+    width: 400px;
+    height: 350px;
+    border: 1.5px solid black;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    background-color: transparent;
+    transition: right 0.5s ease;
+    border-radius:5px;
+    backdrop-filter: blur(5px);
+    box-shadow: 5px 5px 7px lightblue;
+  }
+  
+  /* .main-cont.show {
+    right: 0;
+    margin-right: 30px;
+  } */
+  
+  .person-icon {
+    width: 100px;
+    height: 75px;
+    margin-top: 20px;
+  }
+  
+  .login-button {
+    padding: 20px;
+    width: 90%;
+    margin-top: 25px;
+    border-radius: 25px;
+    align-items: center;
+    background-color:transparent;
+   
+    
+  }
+  
+  .login-button:hover {
+    background-color: rgb(6, 96, 156);
+    font-weight: bold;
+    color: white;
+    border:2px solid black;
+  }
+  .back-button{
+    margin-left:65%;
+    margin-top:10%;
+  }
+  .back-button:hover{
+    color: rgb(6, 96, 156);
+    font-weight: bold;
+  }
+  button{
+    
+    text-decoration:none;
+    color:white;
+    border:none;
+    background-color: transparent;
+    transition: right 0.5s ease;
+  }
+  h2{
+    color:cornsilk;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+  }
+  input{
+    width:85%;
+    height:8%;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    border-radius:2px;
+    border:2px solid black;
+  }
