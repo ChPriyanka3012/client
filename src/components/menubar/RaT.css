@@ -1,0 +1,81 @@
+.query-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .query-container textarea {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  .query-container button {
+    flex-shrink: 0;
+  }
+  
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+  }
+  
+  .ticket-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .ticket-form label {
+    margin-top: 10px;
+  }
+  
+  .ticket-form input[type="text"],
+  .ticket-form textarea,
+  .ticket-form select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+  }
+  
+  .ticket-form input[type="radio"] {
+    margin-right: 5px;
+  }
+  
+  .ticket-form .btn {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .ticket-form .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .ticket-form .query-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .ticket-form .query-container textarea {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  .ticket-form .query-container button {
+    flex-shrink: 0;
+  }
+  .error{
+    color:white;
+    margin:20px;
+  }
+  

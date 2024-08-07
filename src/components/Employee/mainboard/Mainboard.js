@@ -8,6 +8,7 @@ import Dashboard from '../../menubar/Dashboard';
 import Attendance from '../../menubar/Attendance';
 import Meetings from '../../menubar/Meetings';
 import Chat from '../../menubar/Chat';
+
 import About from '../../menubar/About';
 import Contact from '../../menubar/Contact';
 import RaT from '../../menubar/RaT';
