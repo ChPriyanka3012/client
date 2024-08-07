@@ -35,18 +35,18 @@ const Dashboard = () => {
             <h2>Current Projects</h2>
             <hr></hr>
             <a href="http://localhost:3000/">Lyros HRM</a>
-            <a href="">Urban Comfort</a>
+            <a href="https://urbanfurnituregallery.com/">Urban Comfort</a>
 
            
         </div>
         <div className="services">
             <h2>Services</h2>
             <hr></hr>
-            <a>MERN STACK</a>
-            <a>JAVA</a>
-            <a>NETWORKING</a>
-            <a>API TESTING</a>
-            <a>NON - IT</a>
+            <a href="https://www.udemy.com/course/react-the-complete-guide-incl-redux/?utm_source=adwords&utm_medium=udemyads&utm_campaign=Search_Keyword_Alpha_Prof_la.EN_cc.India&campaigntype=Search&portfolio=India&language=EN&product=Course&test=&audience=Keyword&topic=React_JS&priority=Alpha&utm_content=deal4584&utm_term=_._ag_160270532145_._ad_696237122068_._kw_mern+stack+full+course_._de_c_._dm__._pl__._ti_kwd-981735487897_._li_9181986_._pd__._&matchtype=b&gad_source=1&gclid=Cj0KCQjwtsy1BhD7ARIsAHOi4xbj3dB5Rt-SPJnPZFSVOGfLjqBkZM4bFJF433HhSA4_aGvgvs8S1JAaAgVrEALw_wcB&couponCode=IND21PM">MERN STACK</a>
+            <a href="https://www.coursera.org/courses?query=java">JAVA</a>
+            <a href="https://www.coursera.org/courses?query=java">NETWORKING</a>
+            <a href="https://www.udemy.com/topic/api-testing/">API TESTING</a>
+            <a href="https://www.squadstack.com/blog/bpo-voice-and-non-voice-process">NON - IT</a>
            
         </div>
         {/* <div className="sidebar">
