@@ -1,0 +1,244 @@
+ody {
+    font-family: Arial, sans-serif;
+}
+
+.calendar-container {
+    font-family: Arial, sans-serif;
+    max-width: 700px;
+    height:80%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+ 
+  .calendar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  }
+  
+
+  .calendar-title {
+  text-align: center;
+  font-size: 28px;
+  margin: 0;
+  }
+  
+
+  .arrow-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 28px;
+  color: #333;
+  }
+  
+  .arrow-button:hover {
+  color: #4CAF50;
+  }
+  
+  
+  .calendar-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 2px;
+  }
+  
+  
+  .calendar-day {
+  position: relative;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 18px;
+  color: #333;
+  }
+  
+  .calendar-day:hover {
+  background-color: #e0e0e0;
+  }
+  
+  .calendar-day.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+  }
+  
+  .calendar-day.clickable {
+  background-color: #ffffff;
+  color: #333;
+  border: 1px solid #ccc;
+  }
+  
+  .calendar-day.clickable:hover {
+  background-color: #f0f0f0;
+  }
+  
+  .calendar-day.has-event::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 10px;
+  background-color: #4CAF50;
+  border-radius: 50%;
+  }
+  
+
+  .event-tooltip {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 10px;
+  z-index: 1;
+  display: none;
+  }
+  
+  .calendar-day:hover .event-tooltip {
+  display: block;
+  }
+  
+  .event-tooltip-item {
+  margin-bottom: 5px;
+  }
+  
+
+  .events-today {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .events-today-title {
+  font-size: 22px;
+  margin-bottom: 10px;
+  }
+  
+  .events-today-list {
+  list-style-type: none;
+  padding: 0;
+  }
+  
+  .events-today-item {
+  margin-bottom: 10px;
+  }
+  
+  .events-today-event {
+  font-weight: bold;
+  color: #333;
+  }
+  
+ 
+  .calendar-events-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  }
+  
+
+  .create-meeting-button {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  }
+  
+  .create-meeting-button:hover {
+  background-color: #45a049;
+  }
+  
+
+  .meeting-form {
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  z-index: 2;
+  }
+  
+  .meeting-form h3 {
+  margin-top: 0;
+  }
+  
+  .meeting-form label {
+  display: block;
+  margin-bottom: 10px;
+  }
+  
+  .meeting-form input[type="date"],
+  .meeting-form input[type="text"],
+  .meeting-form input[type="time"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  }
+  
+  .meeting-form button {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+  }
+  
+  .meeting-form button:hover {
+  background-color: #45a049;
+  }
+  
+  .meeting-form button[type="button"] {
+  background-color: #f44336;
+  }
+  
+  .meeting-form button[type="button"]:hover {
+  background-color: #d32f2f;
+  }
+  
+ 
+  .close-form-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  color: #333;
+  cursor: pointer;
+  }
+  
+  .close-form-button:hover {
+  color: #f44336;
+  }
+  
+  
+  .calendar-event-time {
+  font-style: italic;
+  color: #666;
+  }
+  

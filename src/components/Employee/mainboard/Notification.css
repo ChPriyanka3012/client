@@ -1,4 +1,15 @@
 .not-class{
-    color:white;
-    font-size:60px;
+
+    
+    
+}
+.notifications{
+    width: 40%;
+    height: 250px; 
+    padding:10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    margin:15px;
+
 }

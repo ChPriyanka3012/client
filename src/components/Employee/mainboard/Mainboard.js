@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { Link, Route, Routes } from 'react-router-dom';
 import './Mainboard.css';
 import Navbar from '../../navbar/Navbar';
@@ -8,9 +8,9 @@ import Dashboard from '../../menubar/Dashboard';
 import Attendance from '../../menubar/Attendance';
 import Meetings from '../../menubar/Meetings';
 import Chat from '../../menubar/Chat';
-
 import About from '../../menubar/About';
 import Contact from '../../menubar/Contact';
+import Helpdesk from '../../menubar/Helpdesk';
 import RaT from '../../menubar/RaT';
 
 import { RiDashboardHorizontalFill } from "react-icons/ri";
@@ -66,16 +66,18 @@ const Mainboard = () => {
           </Link>
         </div>
         <div className='main-container'>
-          {showContent && <Notification />}
-          <Routes>
-            <Route path="dashboard" element={<Dashboard />} />
-            <Route path="attendance" element={<Attendance />} />
-            <Route path="chat" element={<Chat />} />
-            <Route path="meetings" element={<Meetings />} />
-            <Route path="about" element={<About />} />
-            <Route path="contact" element={<Contact />} />
-            <Route path="raise-ticket" element={<RaT />} />
-          </Routes>
+          {showContent ? <Notification /> : (
+            <Routes>
+              <Route path="dashboard" element={<Dashboard />} />
+              <Route path="attendance" element={<Attendance />} />
+              <Route path="chat" element={<Chat />} />
+              <Route path="meetings" element={<Meetings />} />
+              <Route path="about" element={<About />} />
+              <Route path="contact" element={<Contact />} />
+              <Route path="helpdesk" element={<Helpdesk />} />
+              <Route path="raise-ticket" element={<RaT />} />
+            </Routes>
+          )}
         </div>
       </div>
     </div>

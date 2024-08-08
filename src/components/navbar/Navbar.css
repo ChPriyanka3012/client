@@ -4,7 +4,10 @@
     align-items: center;
     padding: 10px 20px;
     background-color: whitesmoke;
-    color: black; 
+    color: black;
+    position: sticky;
+    top: 0; /* Ensure the navbar stays at the top */
+    z-index: 1000; /* Ensure it stays above other content */
 }
 
 .logo img {
@@ -14,7 +17,7 @@
 .profile1 {
     display: flex;
     align-items: center;
-    color: black; 
+    color: black;
 }
 
 .profile {
@@ -24,8 +27,8 @@
 }
 
 .profile img {
-    border-radius: 50%; 
-    margin-right: 10px; 
+    border-radius: 50%;
+    margin-right: 10px;
     height: 30px;
     margin-left: 27px;
     cursor: pointer;
@@ -33,14 +36,14 @@
 
 .dropdown {
     position: absolute;
-    top: 120%;
+    top: 120%; /* Position dropdown below the profile image */
     right: 0;
     background-color: white;
     border: 1px solid #ddd;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-    z-index: 1000;
-    width: 200px; /* Adjust as needed */
+    z-index: 2000; /* Higher than navbar's z-index to ensure it's on top */
+    width: 200px;
 }
 
 .dropdown-content {
