@@ -8,6 +8,8 @@ const Dashboard = () => {
         <div className="employee-directory">
             <h2>Employee Directory</h2>
             <hr></hr>
+            <div className='main-box'>
+            <div className='d1'>
             <p><b>Employee Name</b></p>
             <select>
                 <option value="Select one">Select One</option>
@@ -17,6 +19,8 @@ const Dashboard = () => {
                 <option value="krishnakarthik">Krishna Karthik</option>
                 <option value="fayaz">Fayaz</option>
             </select>
+            </div>
+            <div className='d2'>
             <p><b>Department</b></p>
             <select>
                 <option value="Select one">Select One</option>
@@ -26,7 +30,8 @@ const Dashboard = () => {
                 <option value="non-it">Non-IT</option>
                 <option value="hr">HR</option>
             </select>
-           
+            </div>
+            </div>
         </div>
     </div>
     <div className="bottom-row">

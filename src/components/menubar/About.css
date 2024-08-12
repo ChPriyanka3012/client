@@ -1,0 +1,108 @@
+.container {
+    background-color: lavender;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px;
+  }
+  
+  .section {
+    margin-bottom: 20px;
+  }
+  
+  .content {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    
+  }
+  
+  .content p {
+    flex: 1; 
+    min-width: 45%;
+    border-color: black;
+  }
+  .container1 {
+    display: flex;
+    justify-content: space-between; 
+    gap: 20px; 
+    padding: 20px;
+    box-shadow: inset;
+  }
+  .container2 {
+    display: flex;
+    justify-content: space-between; 
+    gap: 20px; 
+    padding: 20px;
+    box-shadow: inset;
+  }
+  .box {
+    flex: 1; 
+    height: 100px; 
+    border-radius: 15px; 
+    background-color: #f0f0f0; 
+    border: 2px solid #ccc;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  }
+  .text {
+    font-size: 1.2em; 
+    color: #333; 
+  }
+  .icon {
+    font-size: 4.2em;
+    color: blue;
+  }
+  
+  .vision, .mission, .achievements{
+    margin-bottom: 20px;
+  }
+  .vision {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+  }
+  .image1 {
+    width: 450px; 
+    height: 350px; 
+  }
+  .mission {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+  }
+  
+  .image2 {
+    width: 450px; 
+    height: 300px; 
+  }
+  
+  
+  h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  p, ul {
+    font-size: 1em;
+    line-height: 1.6;
+  }
+  
+  ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  .footer{
+    background-color: silver;
+    display: flex;
+    background-color:black;
+    justify-content: space-around;
+    padding: 10px;
+    text-align: left;
+    color:white;
+  }
+  

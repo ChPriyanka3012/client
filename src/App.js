@@ -9,6 +9,7 @@ import Navbar from './components/navbar/Navbar';
 import Dashboard from './components/menubar/Dashboard';
 import Chat from './components/menubar/Chat';
 import Meetings from './components/menubar/Meetings';
+import About from './components/menubar/About';
 import Contact from './components/menubar/Contact';
 import Helpdesk from './components/menubar/Helpdesk';
 import RaT from './components/menubar/RaT';
@@ -26,6 +27,7 @@ function App() {
           <Route path='/menubar' element={<Dashboard />} />
           <Route path='/menubar' element={<Chat/>} />
           <Route path='/menubar' element={<Meetings/>} />
+          <Route path='/menubar' element={<About/>} />
           <Route path='/menubar' element={<Contact/>} />
           <Route path='/live-chat' element={<Helpdesk/>} />
           <Route path='/menubar' element={<RaT />} />
